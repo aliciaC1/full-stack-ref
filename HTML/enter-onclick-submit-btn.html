@@ -1,0 +1,25 @@
+<!--Example using onlick and enter button-->
+<!-- Form with multiple choices-->
+<form>
+    <label for="age">Age:</label>
+    <input type="number" min="0" max="120" name="age" id="age">
+    <button id="child">Child</button>
+    <button id="adult">Adult</button>
+</form>
+<script>
+    (function() {
+        var age = document.getElementById('age');
+        //create event listner with the enter keypress//
+        age.addEventListener('keypress', function(event) {
+            //enter key is 13//
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                if (age.value > 20) {
+                    document.getElementById('adult').click();
+                } else {
+                    document.getElementById('child').click();
+                }
+            }
+        });
+    }());
+</script>
