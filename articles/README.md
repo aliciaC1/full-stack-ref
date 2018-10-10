@@ -6,3 +6,7 @@
 
 ## API's
 1. [RESTful API Designing best practices](https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9)
+
+## MongoDB
+
+1. [Security Flaws](https://www.theregister.co.uk/2017/01/11/mongodb_ransomware_followup/)
